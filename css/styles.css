@@ -1,0 +1,297 @@
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+ /*box-sizing: inherit;*/
+}
+body {
+	background-color: #fcfdfd;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 17px;
+	line-height: 1.5;
+}
+header {
+	background-color: #1a2e2e;
+	color:white;
+}
+section {
+	/*background-color: tomato;*/
+	width: 80%;
+	margin: auto;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	align-items: center;
+}
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+ }
+.dropdown {
+	float:left;
+	overflow: hidden;
+}
+ 
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: rgb(171, 171, 218);
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.divider > section{
+	border-bottom: 1px dashed #1a2e2e;
+	padding: 25px 0;
+}
+.divider > section:last-of-type{
+	border-bottom: none;
+}
+h1{
+	font-size: 50px;
+	padding: 2rem;
+	text-shadow: 2px 20px 10px ;
+	line-height: 1;
+}
+h2{
+	font-size: 25px;
+	padding: 2rem;
+	text-shadow: 2px 2px 40px ;
+}
+h1 h2{
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	margin: 0;
+}
+img {
+	margin: 0.4cm;
+	padding: 0.2cm;
+	border: 10px solid rgb(70, 204, 70);
+	border-width: thin;
+	border-style: groove;
+	background-color: #1a2e2e;
+	width: 300px;
+}
+span{
+   /*  background-color: rgb(191, 255, 71); */
+	width: 100px;
+}
+footer{
+	bottom: 0;
+	position: relative;
+	width: 90%;
+	color:#4a580b;
+	font-style: italic;
+	border-top:slategrey;
+	font-size: 20px;
+	background-color: rgb(191, 255, 71);
+}
+ul#foot{
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+li#foot {                           	 
+	display: inline-block;        	 
+	padding: 15px 20px;       	/*Add padding around the text*/
+	background: none;           	/*Change background color of the menu items*/           	 
+}
+
+.content-wrap{
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+.work{
+	background: rgb(171, 171, 218);
+}
+.left-project {
+	width: 300px;
+	text-align: left;
+	display: inline-block;
+}
+.right-project {
+	width: 300px;
+	display: inline-block;
+	text-align: right;
+}
+
+.projects {
+	background: rgb(236, 227, 227);
+}
+.projects a{
+	color: blue;
+}
+.projects .btn{
+	color: teal;
+	background: rgb(171, 171, 218);
+	border-radius: 4px;
+	padding: 8px;
+	text-decoration: none;
+	display: inline-block;
+}
+.projects .btn:hover{
+ background: rgb(47, 46, 97);
+}
+.project-item{
+	overflow: hidden;
+}
+
+.project-item h3{
+	margin-top: 0;
+}
+
+.contact-list {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.contact-list a{
+	padding: 15px;
+	display: inline-block;
+}
+.education {
+	background-image: url(../images/00_tree_03.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top right;
+	padding-bottom: 50px;
+	color: #e4f790;
+}
+.education p{
+	width: 65%;
+}
+
+
+/* humberger sample */
+.menu-wrap {                                    	/* .menu-wrap contains all parts of our responsive navigation */
+ 	height: 2em;                               	/* Set default height for navigation */
+ 	background-color: rgb(171, 171, 218);      	/* Set background color for entire navigation (useful for horizontal menu)*/
+ 	padding: 10px 10px;                       	/* Set padding around navigation */
+ 	position: fixed;                         	/* Uncomment out this line to lock navigation to top of window when scrolling */
+ 	width: 100%;                             	/* Have navigation fill entire horizontal space */
+}
+.menu-icon {
+ 	font-size: 2em;                         	/* Set size of hamburger menu icon */
+ 	color: #d5e46f;                         	/* Set color of hamburger menu icon */
+}
+nav {
+ 	position: absolute;             	/* Absolute positions nav on page */
+ 	width: 100%;                 	/* Similar to .menu-wrap, nav should fill entire horizontal space */
+ 	background-color: rgb(171, 171, 218);        	/* Set background color for nav (useful when nav becomes vertical)*/
+ 	top: 3.0em;                    	/* Add space to top of screen so links are below hamburger icon */
+ 	left:0;                        	/* Navigation links should appear on left side of screen */    
+}
+nav ul {
+ 	list-style-type: none;         	/* Get rid of bullets on unordered list (navigation links) */
+ 	max-height: 0em;               	/* Section containing navigation links should be collapsed until hamburger menu icon is toggled */
+ 	overflow: hidden;              	/* Content of collapsed section should be hidden */
+ 	transition: max-height 0.5s;   	/* Transition between opening and closing of navigation should take 0.5 seconds */
+}
+nav ul li a {
+ 	display: block;                	/* Links should be displayed as block (each link taking up its required space on a new line) */
+ 	padding: .75em 1.75em;         	/* Set padding for each navigation link */
+ 	color: #fff;                   	/* Set color for navigation links */
+ 	text-decoration: none;         	/* Get rid of underlines on navigation links */
+
+}
+nav ul li a:hover, nav ul li a:focus {
+ 	color: #d5e46f;                  	/* Change color of link when hovered over or focused on */
+}
+#checkbox {
+ 	display: none;                 	/* Although the checkbox functionality is needed, we don't want to see the actual checkbox */
+}
+#checkbox:checked ~ nav ul {
+ 	max-height: 11em;              	/* When the checkbox is checked, expand the height of ul to reveal navigation */
+}
+
+
+/* Responsive
+-------------------------*/
+@media screen and (min-width:765px){
+	header, footer {
+    	text-align:center;
+	}
+	.project-item img{
+    	float: left;
+    	margin-bottom: 20px;
+	}
+	.contact-list{
+    	display: flex;
+    	justify-content: center;
+	}
+}
+
+@media screen and (min-width:764px){
+	h1{
+    	font-size: 75px;
+    	line-height: 0.9;
+	}
+	h2 {
+    	line-height: 1;
+	}
+	.contact-list{
+    	padding: 5px;
+	}
+	.menu-wrap {                         	/* .menu-wrap contains all parts of our responsive navigation */
+ 	padding: 30px 10px;            	/* Set padding around navigation */
+	}
+	.menu-icon {
+      	display: none;            	/* Hide hamburger menu icon on larger screens */
+ 	}
+ 	nav {
+      	position: relative;
+      	top: -1em;                	/* Move navigation links up (as they no longer need to be below hamburger icon) */
+ 	}
+ 	nav ul {
+      	max-height: 0.75em;       	/* Adjust max-height to fit content horizontally rather than vertically */
+      	padding: 30px 0;
+ 	}
+ 	nav ul li {
+      	display: inline-block;    	/* Display list items as an inline-block (on a single line) */
+      	padding-left: 1em;        	/* Add padding between horizontal links */
+ 	}
+}
